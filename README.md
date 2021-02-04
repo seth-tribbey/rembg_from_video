@@ -4,9 +4,7 @@ Uses [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) and [rembg](htt
 
 Usage:
 ```
-rembg_video.py [-h] [-a] [-af AF] [-ab AB] [-ae AE] [--skip-extract] [--skip-process] input
-
-Applies rembg to the frames of a video
+python .\rembg_video.py [-h] [-a] [-af AF] [-ab AB] [-ae AE] [--skip-extract] [--skip-process] input
 
 positional arguments:
   input           Input video
