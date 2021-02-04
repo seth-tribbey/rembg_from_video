@@ -1,6 +1,7 @@
 # rembg_from_video
 
 Uses [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) and [rembg](https://github.com/danielgatis/rembg) to attempt removal of a background from a video file.
+
 Two folders will be created in the same directory as the script to hold the video frames (before and after rembg is applied).
 
 ### Usage:
