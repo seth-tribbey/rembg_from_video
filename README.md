@@ -2,7 +2,7 @@
 
 Uses [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) and [rembg](https://github.com/danielgatis/rembg) to attempt removal of a background from a video file.
 
-Usage:
+### Usage:
 ```
 python .\rembg_video.py [-h] [-a] [-af AF] [-ab AB] [-ae AE] [--skip-extract] [--skip-process] input
 
