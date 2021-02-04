@@ -26,3 +26,6 @@ optional arguments:
   --skip-process  Skips rembg frame processing
   ```
   Tip: [Alpha matting can be used to refine the results](https://github.com/danielgatis/rembg#advance-usage)
+
+### Example:
+![](/example/input.gif)![](/example/output.gif)
