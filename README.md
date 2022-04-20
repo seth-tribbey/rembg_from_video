@@ -5,11 +5,13 @@ Uses [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) and [rembg](htt
 Two directories will be created in the same directory as the script to hold the video frames (before and after rembg is applied).
 
 ### Installation:
-rembg depends on the version of PyTorch listed below.
+[Install rembg by following their instructions](https://github.com/danielgatis/rembg)
+
+rembg specifically requires Python 3.9 as of the time of this writing. Note that you must choose the `rembg[gpu]` version and configure onnxruntime accordingly if you wish to use your GPU for the image processing.
+
+Then:
 ```
-pip install torch==1.6.0 torchvision==0.7.0
 pip install ffmpeg-python
-pip install rembg
 ```
 ### Usage:
 ```
