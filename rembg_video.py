@@ -41,11 +41,11 @@ if not args.skip_process:
   processed_dir = str(pathlib.Path(__file__).parent.absolute()) + "\\" + "processed"
 
   for file in os.listdir(files_dir):
-    img = open(os.path.join(files_dir, file), "rb")
-    img_bytes = bytearray(img.read())
-    processed_bytes = remove(img_bytes, alpha_matting=args.a, alpha_matting_foreground_threshold=args.af, alpha_matting_background_threshold=args.ab, alpha_matting_erode_structure_size=args.ae)
-    processed_img = open(os.path.join(processed_dir, file), "wb")
-    processed_img.write(processed_bytes)
+    with open(os.path.join(files_dir, file), "rb") as i:
+      with open(os.path.join(processed_dir, file), "wb") as o:
+          input = i.read()
+          output = remove(input, alpha_matting=args.a, alpha_matting_foreground_threshold=args.af, alpha_matting_background_threshold=args.ab, alpha_matting_erode_size=args.ae)
+          o.write(output)
 
 #Output video
 stream = ffmpeg.input("processed\\%04d.png", r=framerate, f='image2', s=whstr, pix_fmt='yuv420p')
