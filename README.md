@@ -5,10 +5,9 @@ Uses [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) and [rembg](htt
 Two directories will be created in the same directory as the script to hold the video frames (before and after rembg is applied).
 
 ### Installation:
-[Install pytorch](https://pytorch.org/)
-
-Then:
+rembg depends on the version of PyTorch listed below.
 ```
+pip install torch==1.6.0 torchvision==0.7.0
 pip install ffmpeg-python
 pip install rembg
 ```
